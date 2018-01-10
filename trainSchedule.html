@@ -7,7 +7,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
@@ -15,20 +15,90 @@
 	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
 	<script>
-	
-	  var config = {
-	    apiKey: "AIzaSyCpAVIBrxojnkfzXcv-zS1B6Rtj-kl3y5g",
-	    authDomain: "testnum2-c3808.firebaseapp.com",
-	    databaseURL: "https://testnum2-c3808.firebaseio.com",
-	    projectId: "testnum2-c3808",
-	    storageBucket: "",
-	    messagingSenderId: "25042647225"
-	  };
 
-	  firebase.initializeApp(config);
+		var config = {
+			apiKey: "AIzaSyCpAVIBrxojnkfzXcv-zS1B6Rtj-kl3y5g",
+			authDomain: "testnum2-c3808.firebaseapp.com",
+			databaseURL: "https://testnum2-c3808.firebaseio.com",
+			projectId: "testnum2-c3808",
+			storageBucket: "",
+			messagingSenderId: "25042647225"
+		};
+
+		firebase.initializeApp(config);
 
 	</script>
 
+	<div id='container'>
+		<div class='row'>
+			<div class='col-md-1'>
+			</div>
+			<div class='col-md-10'>
+				<div class='row'>
+					<div class='col-md-12 bg-light text-dark '>
+						<h1 class="display-1 text-center ">Header </h1>
+						<h3 class="display-4 text-center ">something something subheader</h3>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-md-12'>
+						<h3> Current Train Schedule</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Destination</th>
+									<th>First Arrival</th>
+									<th>Frequency</th>
+									<th>Next Train</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Blue Line</td>
+									<td>MOA</td>
+									<td>6:00</td>
+									<td>15 minutes</td>
+									<td>8 minutes</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-md-12'>
+						<h3>Add Train</h3>
+						<form action="/action_page.php">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter name" name="name">
+							</div>
+							<div class="form-group">
+								<label for="destination">Destinatin:</label>
+								<input type="destination" class="form-control" id="destination" placeholder="Enter destination" name="destination">
+							</div>
+							<div class="form-group">
+								<label for="firstArrival">First Arrival:</label>
+								<input type="First Arrival" class="form-control" id="firstArrival" placeholder="Enter First Arrival" name="First Arrival">
+							</div>
+							<div class="form-group">
+								<label for="frequency">Frequency:</label>
+								<input type="destination" class="form-control" id="frequency" placeholder="Enter frequency" name="frequency">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="remember"> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='col-md-1'>
+		</div>
+	</div>
 	<script type="text/javascript">
 		
 	</script>
